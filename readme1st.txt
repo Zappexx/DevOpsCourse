@@ -9,14 +9,20 @@ Installing OS
 4. Create new Virtual Machine: Machine -> CReate -> (Set Vm name, Folder, Type OS, Version OS) -> Next -> (Set RAM volume) -> Next -> (Set disk type and disk volume) -> Create
 5. Launch created VM
 FOR UBUNTU:
-1.Choose instalation language
+1.Choose installation language
 2.Set Keyboard Layout
-3.Set Type of Instalation "Normal Instalation" and press NEXT
-4.Click the desktop shortcut ìInstall Ubuntuî to bring up the Ubuntu installation wizard.
+3.Set Type of Installation "Normal Installation" and press NEXT
+4.Click the desktop shortcut ‚ÄúInstall Ubuntu‚Äù to bring up the Ubuntu installation wizard.
 Follow the wizard until it asks you to choose where to install Ubuntu. Select created space.
-6.When everythingís done, click Install Now and confirm to format the partitions (Pay attention on which partitions to be formatted).
+6.When everything‚Äôs done, click Install Now and confirm to format the partitions (Pay attention on which partitions to be formatted).
 7.Set user-name and password
 8.Click continue and finish the wizard. 
+
+!ADVICE! Before making next steps - create a clone of fresh installed OS in VB.
+1. Choose your installed OS
+2. Click Ctrl+O
+3. Name your clone
+4. Set "Full Clone"
 
 Update Ubuntu to last version
 1. Use this commands 
@@ -73,7 +79,7 @@ WantedBy=multi-user.target
 3. Reload systemd 
 $ sudo systemctl daemon-reload
 
-Instalation LAMP stack
+Installation LAMP stack
 1. Create a directory where we would be creating the instance:
 
 mkdir -p ~/Vagrant/lamp
@@ -151,9 +157,3 @@ Please note- While installing mysql-server, it will set it's root password to 'r
 6. Now after the vagrant is done with installation, you are ready to go. SSH into the vagrant box as:
 
 vagrant ssh
-
-
-
-
-
-
